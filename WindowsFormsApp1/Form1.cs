@@ -31,21 +31,53 @@ namespace WindowsFormsApp1
         {
 
         }
-
+        int count = 0;
         private void button4_Click (object sender, EventArgs e)
         {
-            prshow.Visible = true;
-            groupBox1.Visible = false;
-            groupBox2.Visible = false;
-            groupBox3.Visible = false;
+        
+            count++;
+            if (count%2==0)
+            {
+                prshow.Visible = false;
+            }
+            else
+            {
+                prshow.Visible = true;
+                tskshow.Visible = true;
+                contshow.Visible = false;
+                colorshow.Visible = false;
+
+            }
+
         }
 
         private void button5_Click (object sender, EventArgs e)
         {
             prshow.Visible = false;
-            groupBox1.Visible = true;
-            groupBox2.Visible = false;
-            groupBox3.Visible = false;
+            tskshow.Visible = true;
+            contshow.Visible = false;
+            colorshow.Visible = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            prshow.Visible = false;
+            tskshow.Visible = false;
+            contshow.Visible = true;
+            colorshow.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            prshow.Visible = false;
+            tskshow.Visible = false;
+            contshow.Visible = false;
+            colorshow.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Green;
         }
     }
 }
