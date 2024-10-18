@@ -28,3 +28,13 @@ C:\Users\st310-05\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\W
 C:\Users\st310-05\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\st310-05\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\st310-05\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Tertan4ik\Desktop\eevevev-main\eevevev-main\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

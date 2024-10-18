@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -138,10 +139,43 @@ namespace WindowsFormsApp1
             groupBox2.Visible = true;
             groupBox1.Enabled = false;
             groupBox1.Visible = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button6.Visible = false;
+            button7.Visible = false;
+            prshow.Visible = false;
+            tskshow.Visible = false;
+            contshow.Visible = false;
+            colorshow.Visible = false;
         }
 
         private void button10_Click (object sender, EventArgs e)
         {
+            if(textBox1.Text != null && textBox2.Text != null&& textBox3.Text != null&& textBox4.Text != null&&textBox5.Text != null)
+            {
+             StreamWriter sw = new StreamWriter("contacts.txt");
+
+            sw.WriteLine(textBox1.Text);
+
+            sw.WriteLine(textBox2.Text);
+
+            sw.WriteLine(textBox3.Text);
+
+            sw.WriteLine(textBox4.Text);
+
+            sw.WriteLine(textBox5.Text);
+
+            sw.Close();
+            }
+            else
+            {
+                MessageBox.Show("Заполните все поля", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
 
         }
 
@@ -156,6 +190,54 @@ namespace WindowsFormsApp1
             groupBox1.Visible = true;
             groupBox2.Enabled = false;
             groupBox2.Visible = false;
+            button4.Enabled = false;
+            button5.Enabled = false;    
+            button6.Enabled = false;    
+            button7.Enabled = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button6.Visible = false;
+            button7.Visible = false;
+            prshow.Visible = false;
+            tskshow.Visible = false;
+            contshow.Visible = false;
+            colorshow.Visible = false;
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible=false;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button6.Visible = true;
+            button7.Visible = true;
+            count1 = 0;
+            count2 = 0;
+            count3 = 0;
+            count4 = 0;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            groupBox2.Visible = false;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button6.Visible = true;
+            button7.Visible = true;
+            count1 = 0;
+            count2 = 0;
+            count3 = 0;
+            count4 = 0;
+
         }
     }
 }
