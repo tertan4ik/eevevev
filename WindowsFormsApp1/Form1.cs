@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 :Form
     {
+
         public Form1 ()
         {
             InitializeComponent( );
@@ -132,32 +133,38 @@ namespace WindowsFormsApp1
         {
             this.BackColor = Color.Red;
         }
+        private void refreshcomb()
+        {
+            comboBox1.Items.Clear( );
+            StreamReader sr = new StreamReader("contacts.txt");
+            while (!sr.EndOfStream)
+            {
+                comboBox1.Items.Add(sr.ReadLine( ));
+                for (int i = 0; i < 4; i++)
+                {
+                    sr.ReadLine( );
+                }
 
+
+            }
+            sr.Close( );
+        }
         private void button8_Click (object sender, EventArgs e)
         {
+            refreshcomb( );
+           
             groupBox2.Enabled = true;
             groupBox2.Visible = true;
-            groupBox1.Enabled = false;
-            groupBox1.Visible = false;
-            button4.Enabled = false;
-            button5.Enabled = false;
-            button6.Enabled = false;
-            button7.Enabled = false;
-            button4.Visible = false;
-            button5.Visible = false;
-            button6.Visible = false;
-            button7.Visible = false;
-            prshow.Visible = false;
-            tskshow.Visible = false;
-            contshow.Visible = false;
-            colorshow.Visible = false;
+     
+
+
         }
 
         private void button10_Click (object sender, EventArgs e)
         {
-            if(textBox1.Text != null && textBox2.Text != null&& textBox3.Text != null&& textBox4.Text != null&&textBox5.Text != null)
+            if(textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "")
             {
-             StreamWriter sw = new StreamWriter("contacts.txt");
+                StreamWriter sw = File.AppendText("contacts.txt");
 
             sw.WriteLine(textBox1.Text);
 
@@ -188,20 +195,8 @@ namespace WindowsFormsApp1
         {
             groupBox1.Enabled = true;
             groupBox1.Visible = true;
-            groupBox2.Enabled = false;
-            groupBox2.Visible = false;
-            button4.Enabled = false;
-            button5.Enabled = false;    
-            button6.Enabled = false;    
-            button7.Enabled = false;
-            button4.Visible = false;
-            button5.Visible = false;
-            button6.Visible = false;
-            button7.Visible = false;
-            prshow.Visible = false;
-            tskshow.Visible = false;
-            contshow.Visible = false;
-            colorshow.Visible = false;
+   
+  
 
         }
 
@@ -237,6 +232,27 @@ namespace WindowsFormsApp1
             count2 = 0;
             count3 = 0;
             count4 = 0;
+
+        }
+
+        private void Form1_Load (object sender, EventArgs e)
+        {
+         
+      
+        }
+
+        private void button14_Click (object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1 (object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void contshow_Enter (object sender, EventArgs e)
+        {
 
         }
     }
